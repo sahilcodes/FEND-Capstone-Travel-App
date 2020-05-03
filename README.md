@@ -6,7 +6,7 @@ HTML, CSS, SASS, JavaScript, Node.js, Express.js, Webpack, Babel, Jest, API
 
 ![](app-screenshot.jpg)
 
-Visit the website [here](#)
+Visit the website [here](https://fend-travel-planner.herokuapp.com/)
 
 ## Project requirements
 1. There should be URLS and API Keys for at least 3 APIs, including Geonames, Dark Sky, and Pixabay
