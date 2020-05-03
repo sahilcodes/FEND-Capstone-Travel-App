@@ -1,0 +1,36 @@
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba($color: $color-black, $alpha: 0.15);
+
+    .header {
+        @include f-b-c;
+
+        .logo {
+            span {
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-image: url('../media/icons/logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        nav li {
+
+            &:not(.active){
+                display: none;
+            }
+
+            a {
+                color: $color-white;
+                padding: 5px 10px;
+            }
+
+            }
+       
+    }
+}

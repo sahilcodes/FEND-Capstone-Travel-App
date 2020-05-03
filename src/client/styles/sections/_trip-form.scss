@@ -1,0 +1,64 @@
+.trip-form {
+    min-height: 100vh;
+    @include f-c-c-col;
+    
+    background-image: url("../media/bg/form-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    
+
+    &__block {
+        max-width:460px;
+        padding: 1.2em;
+        background-color: rgba($color: $color-black, $alpha: 0.75);
+        box-shadow: 0 48px 83px 0 rgba($color: $color-black, $alpha: 0.45);
+        color: $color-white;
+        border-radius: 6px;
+    }
+
+
+    &__entry {
+        
+       label span {
+           padding-bottom: 5px;
+           display: inline-block;
+       }
+    }
+
+    &__row {
+        @include f-b-c;
+        margin-bottom: 1em;
+
+        &>div {
+            margin-right: 1.2em;
+            width: calc(50% - 0.6em);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+
+    .datepicker {
+        margin-top: -0.4em;
+    }
+
+    &__search {
+        grid-area: 3/1/4/3;
+        margin-top: -1.2em;
+    }
+
+    .page-title {
+        margin: 1em 0 2.5em 0;
+
+        h1 {
+            font-size: 2em;
+            
+            @media (min-width: 768px){
+                font-size: 3em;
+            }
+        }
+    }
+}
