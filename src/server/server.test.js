@@ -1,5 +1,17 @@
-const sum = require('./server');
+const request = require("supertest");
+const app = require('./server');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+describe("Test the root path", () => {
+    test("It should response the GET method", async () => {
+      const response = await request(app).get("/");
+      expect(response.statusCode).toBe(500);
+    });
+});
+
+describe('GET /all ', () => {
+  test('It should respond', async () => {
+    const response = await request(app).get('/all');
+    expect(response.req.path).toBe('/all');
+    expect(response.statusCode).toBe(404);
+  });
 });
